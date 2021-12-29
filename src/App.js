@@ -57,7 +57,7 @@ export default function Counter() {
 
   return (
     <div>
-    <h1><a href="https://docs.google.com/document/d/1F_O-7XUpJXWJo-hdTz9OEjDnQpjgsVln2dasDFWkm1Q/edit?usp=sharing" target="_blank">The Effect Hook</a></h1>
+    <h1><a href="https://docs.google.com/document/d/1F_O-7XUpJXWJo-hdTz9OEjDnQpjgsVln2dasDFWkm1Q/edit?usp=sharing" target="_blank" rel="noreferrer">The Effect Hook</a></h1>
       <h2>Why Use useEffect?</h2>
 
       <h2>Why after each render?</h2>
