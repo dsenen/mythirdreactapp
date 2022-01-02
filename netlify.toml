@@ -1,0 +1,4 @@
+[build]
+base = "mythirdreactapp/"
+publish = "mythirdreactapp/build/"
+command = "yarn build"
