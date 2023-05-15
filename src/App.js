@@ -7,7 +7,7 @@ export default function Counter() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    alert(`Count: ${count}`);
+    console.log(`Count: ${count}`);
   });
 
   const handleClick = () => {
@@ -34,9 +34,9 @@ export default function Counter() {
   const [forecastType, setForecastType] = useState('/daily');
 
   useEffect(() => {
-    alert('Requested data from server...');
+    console.log('Requested data from server...');
     get(forecastType).then((response) => {
-      alert('Response: ' + JSON.stringify(response,'',2));
+      console.log('Response: ' + JSON.stringify(response,'',2));
       setData(response.data);
     });
   }, [forecastType]);
