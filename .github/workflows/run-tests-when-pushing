@@ -1,0 +1,15 @@
+name: run-tests-push
+run-name: ${{ github.actor }} is testing files...
+on: 
+  push: [*]
+jobs:
+  Tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+      - run: yarn install --immutable --immutable-cache --check-cache
+      - run: yarn test

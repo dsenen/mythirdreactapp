@@ -12,13 +12,13 @@ jobs:
       - run: npm install -g bats
       - run: bats -v
   
-  Tests:
-    runs-on: ubuntu-latest
+  # Tests:
+  #   runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '14'
-      - run: yarn install --immutable --immutable-cache --check-cache
-      - run: yarn test
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #     - uses: actions/setup-node@v3
+  #       with:
+  #         node-version: '14'
+  #     - run: yarn install --immutable --immutable-cache --check-cache
+  #     - run: yarn test
