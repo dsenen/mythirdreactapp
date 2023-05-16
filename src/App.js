@@ -113,10 +113,12 @@ export default function Counter() {
 
       <h2>Rules of Hooks</h2>
       <div className="App-header">
+        <p>Nothing in here.</p>
       </div>
 
       <h2>Separate Hooks for Separate Effects</h2>
       <div className="App-header">
+        <p>Nothing in here either.</p>
       </div>
     </div>
   );
